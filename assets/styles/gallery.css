@@ -1,0 +1,149 @@
+:root {
+  --zeroPresentBlueColor: rgb(200, 239, 255);
+  --tenPrecentBlue: rgb(188, 203, 255);
+  --thirtyPresentBlue: rgb(59, 105, 255);
+  --sixtyPresentBlue: rgb(0, 25, 134);
+  --ninetyPresentBlue: rgb(0, 14, 75);
+  --tenPresentRed: rgb(255, 185, 35);
+  --twentyPresentRed: rgb(139, 102, 0);
+  --thrirtyPresentRed: rgb(255, 120, 30);
+  --sixtyPresentRed: rgb(255, 0, 0);
+  --ninetyPresentRed: rgb(124, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery-section {
+  padding:50px;
+  background: var(--ninetyPresentBlue);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 700px;
+  margin: 0;
+}
+
+.gallery-title {
+  color: var(--tenPrecentBlue);
+  text-shadow: 0 3px var(--thirtyPresentBlue);
+  font-size: 50px;
+  margin-left: 5%;
+  padding: 15px;
+}
+
+.img-slider {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  padding: 10px;
+  bottom: 30px;
+  margin-top: 30px;
+}
+
+.img-slider .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active {
+  clip-path: circle(150% at 0 50%);
+}
+
+.img-slider .slide img {
+  z-index: 1;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.img-slider .navigation {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn {
+  background: rgba(188, 202, 255, 0.493);
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.img-slider .navigation .btn.active {
+  background: var(--thirtyPresentBlue);
+}
+
+@media (max-width: 820px) {
+  .img-slider {
+    width: 600px;
+    height: 375px;
+    left: 10%;
+    margin-right: 20%;
+  }
+
+  .img-slider .navigation {
+    bottom: 25px;
+  }
+
+  .img-slider .navigation .btn {
+    width: 8px;
+    height: 8px;
+    margin: 8px;
+  }
+
+  .gallery-title {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 620px) {
+  .img-slider {
+    width: 400px;
+    height: 250px;
+    left: 5%;
+    margin-right: 15%;
+  }
+
+  .img-slider .navigation {
+    bottom: 0;
+  }
+
+  .img-slider .navigation .btn {
+    width: 8px;
+    height: 8px;
+    margin: 8px;
+  }
+
+  .gallery-title {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 420px) {
+  .img-slider {
+    width: 320px;
+    height: 200px;
+    left: 0;
+    margin-right: 10%;
+  }
+
+  .img-slider .navigation {
+    bottom: 0;
+  }
+
+  .gallery-title {
+    margin-left: 0;
+  }
+}

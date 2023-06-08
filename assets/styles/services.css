@@ -1,0 +1,102 @@
+:root {
+  --zeroPresentBlueColor: rgb(200, 239, 255);
+  --tenPrecentBlue: rgb(188, 203, 255);
+  --thirtyPresentBlue: rgb(59, 105, 255);
+  --sixtyPresentBlue: rgb(0, 25, 134);
+  --ninetyPresentBlue: rgb(0, 14, 75);
+  --tenPresentRed: rgb(255, 185, 35);
+  --twentyPresentRed:rgb(155, 93, 0);
+  --thrirtyPresentRed: rgb(255, 120, 30);
+  --sixtyPresentRed: rgb(255, 0, 0);
+  --ninetyPresentRed: rgb(124, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "syne", sans-serif;
+}
+
+.services-section {
+  background: linear-gradient(var(--sixtyPresentBlue), var(--ninetyPresentBlue));
+}
+
+.section-title {
+  color: var(--tenPrecentBlue);
+  text-shadow: 0 3px var(--thirtyPresentBlue);
+  font-size: 50px;
+  margin-left: 25%;
+}
+
+.services-section .services {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.services-section .service-top {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.services-section .service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.services-section .service-item {
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+  background-image: url(./img/img-1.png);
+  background-size: cover;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.services-section .service-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--ninetyPresentBlue);
+  background: rgba(0, 0, 0, 0.356);
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.services-section .service-bottom .icon {
+  height: 5px;
+  width: 5px;
+  margin-bottom: 20px;
+  z-index: -1;
+}
+.services-section .service-item h2 {
+  font-size: 1.5rem;
+  color: var(--tenPresentRed);
+  text-shadow: 0 2px var(--twentyPresentRed);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.services-section .service-item p {
+  color: var(--zeroPresentBlueColor);
+  text-align: left;
+}
+
+@media only screen and (min-width: 1200px) {
+  .services-section .service-bottom .service-item {
+    flex-basis: 30%;
+    margin: 1%;
+  }
+}

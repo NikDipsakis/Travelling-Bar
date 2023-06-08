@@ -1,0 +1,301 @@
+:root {
+  --zeroPresentBlueColor: rgb(200, 239, 255);
+  --tenPrecentBlue: rgb(188, 203, 255);
+  --thirtyPresentBlue: rgb(59, 105, 255);
+  --sixtyPresentBlue: rgb(0, 25, 134);
+  --ninetyPresentBlue:rgb(0, 14, 75);
+  --tenPresentRed: rgb(255, 185, 35);
+  --thrirtyPresentRed: rgb(255, 120, 30);
+  --sixtyPresentRed: rgb(255, 0, 0);
+  --ninetyPresentRed: rgb(124, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "syne", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+body {
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+.back-drop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+}
+
+
+.navbar-video-section {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding:2%;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 200;
+}
+
+.navbar .toggle-btn img {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .toggle-btn img:hover {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.navbar .nav-logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.navbar .nav-list .nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+  margin: 10px;
+  margin-top: 10%;
+}
+
+.navbar .nav-list .nav-list-item a {
+  text-decoration: none;
+  border-radius: 10px;
+  color: var(--tenPrecentBlue);
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.navbar .nav-list .nav-list-item a:hover {
+  color: var(--tenPresentRed);
+  text-shadow: 0 1px var(--sixtyPresentRed);
+  transition: 0.2s;
+}
+
+#about-us {
+  background-color: var(--thirtyPresentBlue);
+  text-shadow: none;
+  padding: 8px 20px;
+  color: var(--tenPresentRed);
+  border-radius: 50px;
+  margin: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#about-us:hover {
+  background-color: var(--tenPresentRed);
+  color: var(--thirtyPresentBlue);
+  transition: 0.5s;
+}
+
+/*DropDown Menu*/
+.dropDown-menu {
+  position: absolute;
+  z-index: 200;
+  display: none;
+  right: 2rem;
+  top: 60px;
+  height: 240px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropDown-menu.open {
+  display: block;
+  
+}
+
+.dropDown-menu .nav-list-item a {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 10px;
+  color: var(--tenPrecentBlue);
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropDown-menu .nav-list-item a:hover {
+  color: var(--tenPresentRed);
+  text-shadow: 0 1px var(--sixtyPresentRed);
+  transition: 0.2s;
+}
+
+.dropDown-menu #about-us {
+  width: 97%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: var(--thirtyPresentBlue);
+  text-shadow: none;
+  padding: 8px 20px;
+  color: var(--tenPresentRed);
+  border-radius: 50px;
+  margin: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropDown-menu #about-us:hover {
+  background-color: var(--tenPresentRed);
+  color: var(--thirtyPresentBlue);
+  transition: 0.5s;
+}
+
+/*Responsive*/
+
+@media (max-width: 992px) {
+  .navbar .nav-list .nav-list-item a {
+    display: none;
+  }
+
+  .navbar .toggle-btn img {
+    display: block;
+  }
+
+  .navbar .cancel-btn-img {
+    display: none;
+  }
+
+  .dropDown-menu {
+    display: none;
+    margin-top: 7%;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropDown-menu {
+    margin-top: 20%;
+    left: 2rem;
+    width: unset;
+  }
+}
+
+.intro-content {
+  text-align: center;
+  margin: 5%;
+  color: var(--thirtyPresentBlue);
+  height: 550px;
+  width: 600px;
+}
+
+.intro-content .intro-h1 {
+  margin-top: 25%;
+  font-size: 40px;
+  color: var(--tenPrecentBlue);
+  text-shadow: 0 3px var(--thirtyPresentBlue);
+}
+
+.intro-content h1 {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 70px;
+  color: var(--sixtyPresentRed);
+  font-weight: 200;
+  text-shadow: 0 3px var(--ninetyPresentRed);
+  cursor: pointer;
+  font-family: "Galada";
+}
+
+.Mexha {
+  color: var(--tenPresentRed);
+  text-shadow: 0 2px var(--sixtyPresentRed);
+}
+
+.intro-content a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--tenPrecentBlue);
+  font-size: 20px;
+  border-style: none;
+  border: 1px solid;
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin: 2%;
+  cursor: pointer;
+}
+
+.intro-content a:hover {
+  border-color: var(--tenPrecentBlue);
+  background-color: var(--tenPrecentBlue);
+  color: var(--thirtyPresentBlue);
+  transition: 0.5s;
+}
+
+video {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .intro-content{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+
+  .intro-content{
+    width: auto;
+    height: 100%;
+    margin-top: 50%;
+    margin-bottom: 25%;
+  }
+}
