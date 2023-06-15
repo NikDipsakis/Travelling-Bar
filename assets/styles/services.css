@@ -15,19 +15,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "syne", sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
 }
 
 .services-section {
   background: var(--ninetyPresentBlue);
+  
 }
 
 .section-title {
   color: var(--tenPrecentBlue);
-  text-shadow: 0 3px var(--thirtyPresentBlue);
+  text-shadow: 0 2px var(--thirtyPresentBlue);
   font-size: 50px;
-  margin-left: 20%;
+  margin-left: 25%;
   padding-top: 1rem;
+  font-weight: 400;
 }
 
 .services-section .services {

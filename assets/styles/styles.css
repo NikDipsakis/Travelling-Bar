@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "syne", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 3rem;
 }
@@ -223,13 +223,14 @@ li {
 
 .intro-content .intro-h1 {
   margin-top: 25%;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: 400;
   color: var(--tenPrecentBlue);
-  text-shadow: 0 3px var(--thirtyPresentBlue);
+  text-shadow: 0 2px var(--thirtyPresentBlue);
 }
 
 .intro-content img {
-  height: 300px;
+  height: 400px;
 }
 
 .intro-content a {
@@ -271,7 +272,7 @@ video {
   }
 
   .intro-content img {
-    height: 200px;
+    height: 250px;
   }
 }
 
@@ -292,5 +293,9 @@ video {
 
   .intro-content img {
     height: 200px;
+  }
+
+  .intro-content .intro-h1{
+    font-size: 200;
   }
 }
