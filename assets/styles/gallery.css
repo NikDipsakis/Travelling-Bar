@@ -18,7 +18,7 @@
 }
 
 .gallery-section {
-  padding:50px;
+  padding: 2rem;
   background: var(--ninetyPresentBlue);
   display: flex;
   align-items: center;

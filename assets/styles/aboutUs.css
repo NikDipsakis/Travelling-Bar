@@ -3,9 +3,9 @@
   --tenPrecentBlue: rgb(188, 203, 255);
   --thirtyPresentBlue: rgb(59, 105, 255);
   --sixtyPresentBlue: rgb(0, 25, 134);
-  --ninetyPresentBlue:rgb(0, 14, 75);
+  --ninetyPresentBlue: rgb(0, 14, 75);
   --tenPresentRed: rgb(255, 185, 35);
-  --twentyPresentRed:rgb(139, 102, 0);
+  --twentyPresentRed: rgb(139, 102, 0);
   --thrirtyPresentRed: rgb(255, 120, 30);
   --sixtyPresentRed: rgb(255, 0, 0);
   --ninetyPresentRed: rgb(124, 0, 0);
@@ -18,54 +18,65 @@
   font-family: "syne", sans-serif;
 }
 
-.about-us-section{
-  width: 100%;
-  padding: 100px 0;
- background: linear-gradient(transparent , var(--sixtyPresentBlue));
-  margin-top: 2%; 
+.about-us-section {
+  background: var(--ninetyPresentBlue);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-bottom: 4rem;
+  padding-top: 7rem;
 }
 
-.about-us-section .about-us-div img{
-  height:auto;
-  width: 600px;
-  border-radius: 10px;
-  margin-left: -8%;
-}
-
-.about-us-section .about-us-div img:hover{
-  width: 625px;
-  transition: 2s;
-}
-
-.about-us-text{
-  width: 500px;
-}
-
-.about-us-div{
-  width: 1130px;
-  max-width: 95%;
-  margin:0 auto;
+.about-us-img {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  text-align: center;
+  gap: 3rem;
+  margin-left: 7%;
 }
 
-.about-us-text h1{
+.about-us-img img {
+  max-width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.about-text {
+  margin-top: 20px;
+  background: rgb(0, 7, 39);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 40%;
+  padding-bottom: 2rem;
+}
+
+.about-text h2 {
+  font-size: 40px;
   color: var(--tenPrecentBlue);
-  text-shadow: 0 3px var(--thirtyPresentBlue);
-  font-size: 50px;
-  text-transform: capitalize;
-  margin-bottom: 5%;
-  margin-left: 20%;
+  text-shadow: 0 2px var(--thirtyPresentBlue);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-.about-us-text p {
-  color: var(--zeroPresentBlueColor);
-  background-color: var(--ninetyPresentBlue);
-  letter-spacing: 1px;
-  line-height: 30px;
-  font-size: 21px;
-  padding: 20px 25px;
-  border-radius: 15px;
-  height: 200px;
+.about-text p {
+  color: var(--tenPrecentBlue);
+  font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .about-us-img {
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+  }
+
+  .about-us-img img {
+    height: 250px;
+  }
+
+  .about-text {
+    margin-top: 10px;
+    width: 80%;
+  }
 }

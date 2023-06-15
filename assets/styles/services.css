@@ -5,7 +5,7 @@
   --sixtyPresentBlue: rgb(0, 25, 134);
   --ninetyPresentBlue: rgb(0, 14, 75);
   --tenPresentRed: rgb(255, 185, 35);
-  --twentyPresentRed:rgb(155, 93, 0);
+  --twentyPresentRed: rgb(155, 93, 0);
   --thrirtyPresentRed: rgb(255, 120, 30);
   --sixtyPresentRed: rgb(255, 0, 0);
   --ninetyPresentRed: rgb(124, 0, 0);
@@ -19,7 +19,7 @@
 }
 
 .services-section {
-  background: linear-gradient(var(--sixtyPresentBlue), var(--ninetyPresentBlue));
+  background: var(--ninetyPresentBlue);
 }
 
 .section-title {
@@ -86,7 +86,6 @@
   color: var(--tenPresentRed);
   text-shadow: 0 2px var(--twentyPresentRed);
   margin-bottom: 10px;
-  text-transform: uppercase;
   z-index: 2;
 }
 .services-section .service-item p {
