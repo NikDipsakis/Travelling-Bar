@@ -3,8 +3,8 @@
   --tenPrecentBlue: rgb(188, 203, 255);
   --thirtyPresentBlue: rgb(59, 105, 255);
   --sixtyPresentBlue: rgb(0, 25, 134);
-  --ninetyPresentBlue: rgb(0, 14, 75);
-  --tenPresentRed: rgb(255, 185, 35);
+  --ninetyPresentBlue: rgb(0, 12, 63);
+  --tenPresentRed: rgb(251, 176, 63);
   --twentyPresentRed: rgb(139, 102, 0);
   --thrirtyPresentRed: rgb(255, 120, 30);
   --sixtyPresentRed: rgb(255, 0, 0);
@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 3rem;
 }
@@ -68,8 +68,7 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-
-  .about-us-section{
+  .about-us-section {
     height: 100%;
   }
 
