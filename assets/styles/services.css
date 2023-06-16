@@ -30,7 +30,7 @@
   text-shadow: 0 2px var(--thirtyPresentBlue);
   font-size: 50px;
   margin-left: 25%;
-  padding-top: 1rem;
+  padding-top: 5rem;
   font-weight: 400;
 }
 
@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .services-section .service-item {
   flex-basis: 80%;
