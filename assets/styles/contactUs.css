@@ -1,0 +1,186 @@
+:root {
+  --zeroPresentBlueColor: rgb(200, 239, 255);
+  --tenPrecentBlue: rgb(188, 203, 255);
+  --thirtyPresentBlue: rgb(59, 105, 255);
+  --sixtyPresentBlue: rgb(0, 25, 134);
+  --ninetyPresentBlue: rgb(0, 12, 63);
+  --tenPresentRed: rgb(251, 176, 63);
+  --twentyPresentRed: rgb(155, 93, 0);
+  --thrirtyPresentRed: rgb(255, 120, 30);
+  --sixtyPresentRed: rgb(255, 0, 0);
+  --ninetyPresentRed: rgb(124, 0, 0);
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.contact-us-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--ninetyPresentBlue);
+  position: relative;
+}
+
+.contact-us-section h2 {
+  font-size: 40px;
+  color: var(--tenPrecentBlue);
+  text-shadow: 0 2px var(--thirtyPresentBlue);
+  padding-bottom: 2rem;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin-left: 40%;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  box-sizing: border-box;
+  width: 100%;
+
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  background-color: var(--ninetyPresentBlue);
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+.footer-logo {
+  width: 350px;
+}
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: var(--tenPrecentBlue);
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  margin: 1rem 0;
+}
+
+.footer-distributed .footer-company-name {
+  color: rgb(155, 93, 0);
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 60%;
+}
+
+.footer-distributed .footer-center img {
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: var(--tenPresentRed);
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 2;
+  color: var(--tenPrecentBlue);
+}
+
+.footer-distributed .footer-center p a {
+  color: var(--tenPrecentBlue);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--tenPresentRed);
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+  .footer-distributed {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    padding: 0;
+    margin:0;
+    background-color: var(--ninetyPresentBlue);
+  }
+  .footer-center {
+    margin-left: 0;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 200%;
+    margin-left: -50px;
+  }
+  .footer-company-name{
+    padding-top: 3rem;
+    margin-left: -20px;
+    padding-bottom: 10px;
+  }
+
+  .footer-center-div{
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .footer-links{
+    margin-left: 50px;
+  }
+  .footer-center-div img {
+    display: flex;
+    align-self: center;
+    margin-left:100px;
+  }
+}

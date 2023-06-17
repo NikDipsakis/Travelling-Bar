@@ -133,6 +133,9 @@
   .gallery-title {
     margin-left: 3%;
   }
+  .gallery-section{
+    height: 500px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -149,5 +152,8 @@
 
   .gallery-title {
     margin-left: 0;
+  }
+  .gallery-section{
+    height: 500px;
   }
 }
