@@ -25,10 +25,12 @@ body {
 }
 
 .contact-us-section h2 {
-  font-size: 40px;
+  font-size: 50px;
   color: var(--tenPrecentBlue);
   text-shadow: 0 2px var(--thirtyPresentBlue);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  font-weight: 400;
 }
 
 /* The footer is fixed to the bottom of the page */
@@ -184,3 +186,18 @@ footer {
     margin-left:100px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer-left,
+    .footer-center {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .footer-left,
+    .footer-center {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
